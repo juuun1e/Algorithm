@@ -1,13 +1,11 @@
-import java.util.Scanner;
+import java.io.*;
 
 public class Main {
-  public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    int boul = sc.nextInt();
-
-    int seo = boul - 543;
-
-    System.out.println(seo);
+  public static void main(String[] args) throws IOException {
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    String st = br.readLine();
+    int year = Integer.parseInt(st);
+    System.out.println(year-543);
 
   }
 }
