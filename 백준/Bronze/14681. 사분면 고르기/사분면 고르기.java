@@ -1,11 +1,13 @@
+import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.Scanner;
+import java.io.InputStreamReader;
 
 public class Main {
   public static void main(String[] args) throws IOException {
-    Scanner sc = new Scanner(System.in);
-    int x = Integer.parseInt(sc.nextLine());
-    int y = Integer.parseInt(sc.nextLine());
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+    int x = Integer.parseInt(br.readLine());
+    int y = Integer.parseInt(br.readLine());
 
     if (x > 0) {
       if (y > 0) {
